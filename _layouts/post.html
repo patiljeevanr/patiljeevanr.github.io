@@ -13,12 +13,29 @@ layout: default
     <hr>
 
     <div class="post-navigation">
-        {% if page.previous.url %}
-            <a class="prev-post" href="{{ page.previous.url }}">&larr; Previous: {{ page.previous.title }}</a>
+        {% assign category = page.categories[0] %}
+        {% assign posts_in_category = site.posts | where_exp: "post", "post.categories contains category" %}
+
+        {% for post in posts_in_category %}
+            {% if post.date > page.date %}
+                {% assign next_post = post %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% for post in posts_in_category reversed %}
+            {% if post.date < page.date %}
+                {% assign prev_post = post %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% if prev_post %}
+            <a class="prev-post" href="{{ prev_post.url }}">&larr; Previous: {{ prev_post.title }}</a>
         {% endif %}
         
-        {% if page.next.url %}
-            <a class="next-post" href="{{ page.next.url }}">Next: {{ page.next.title }} &rarr;</a>
+        {% if next_post %}
+            <a class="next-post" href="{{ next_post.url }}">Next: {{ next_post.title }} &rarr;</a>
         {% endif %}
     </div>
 </article>

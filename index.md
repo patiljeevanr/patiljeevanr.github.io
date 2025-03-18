@@ -26,14 +26,14 @@ title: "Home"
       <h2>Blog</h2>
       <p>Explore my thoughts on technology and personal experiences.</p>
       <ul>
-          <li><a href="blog/tech.md">Tech Blogs</a></li>
-          <li><a href="blog/personal.md">Personal Blogs</a></li>
+          <li><a href="blog/tech">Tech Blogs</a></li>
+          <li><a href="blog/personal">Personal Blogs</a></li>
       </ul>
   </section>
 
   <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>Reach me via <a href="mailto:jeevan@example.com">Email</a> | <a href="#">LinkedIn</a></p>
+      <p>Reach me via <a href="mailto:patiljeevanr@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/patiljeevanr/">LinkedIn</a></p>
   </section>
 
 </div>
