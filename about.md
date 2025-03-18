@@ -4,7 +4,7 @@ title: "About Me"
 ---
 
 # About
-I am a Software Engineer specializing in **Java, Go, Couchbase, and cloud-native solutions**.
+Back-end Developer with almost 6 Years of Experience in Java-based Micro-services delivering High-Quality Solutions.
 
 I focus on:
 - High-throughput applications
