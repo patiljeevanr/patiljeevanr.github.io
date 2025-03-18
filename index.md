@@ -6,7 +6,7 @@ title: "Home"
 <div class="container">
 
   <section id="about" class="card">
-      <h2>About Me</h2>
+      <h2>About</h2>
           {% capture about_content %}{% include about.md %}{% endcapture %}
           {{ about_content | markdownify }}
   </section>
