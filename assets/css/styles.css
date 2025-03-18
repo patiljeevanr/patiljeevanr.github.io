@@ -5,6 +5,7 @@ body {
     background: #f9f9f9;
     color: #333;
     transition: background 0.3s, color 0.3s;
+    margin: 0;
 }
 
 .container {
@@ -26,6 +27,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -40,6 +42,7 @@ nav ul {
     display: flex;
     gap: 20px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -53,6 +56,20 @@ nav a {
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 /* Dropdown Styling */
@@ -71,6 +88,7 @@ nav a:hover {
     top: 100%;
     left: 0;
     min-width: 150px;
+    z-index: 1000;
 }
 
 .dropdown-menu li {
@@ -139,4 +157,13 @@ footer {
     background: #2C3E50;
     color: white;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .card {
+        padding: 15px;
+    }
 }
