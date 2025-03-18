@@ -7,8 +7,7 @@ title: "Home"
 
   <section id="about" class="card">
       <h2>About</h2>
-          {% capture about_content %}{% include about.md %}{% endcapture %}
-          {{ about_content | markdownify }}
+      <p>Back-end Developer with almost 6 Years of Experience in Java-based Micro-services delivering High-Quality Solutions.</p>
   </section>
 
   <section id="projects" class="card">
@@ -32,8 +31,7 @@ title: "Home"
 
   <section id="contact" class="card">
       <h2>Contact</h2>
-          {% capture contact_content %}{% include contact.md %}{% endcapture %}
-          {{ contact_content | markdownify }}
+      <p>Reach me via <a href="mailto:patiljeevanr@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/patiljeevanr/">LinkedIn</a></p>
   </section>
 
 </div>
