@@ -3,8 +3,7 @@ layout: default
 title: "Contact"
 ---
 
-# Contact
+# Contact Me
 
-Reach me via:
-- [Email](mailto:jeevan@example.com)
-- [LinkedIn](#)
+📧 **Email:** [jeevan@example.com](mailto:patiljeevanr@gmail.com)  
+🔗 **LinkedIn:** [View Profile](#)  
