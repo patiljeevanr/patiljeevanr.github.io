@@ -6,8 +6,9 @@ title: "Home"
 <div class="container">
 
   <section id="about" class="card">
-      <h2>About</h2>
-      <p>Software Engineer passionate about Java, Go, Couchbase, and distributed systems.</p>
+      <h2>About Me</h2>
+          {% capture about_content %}{% include about.md %}{% endcapture %}
+          {{ about_content | markdownify }}
   </section>
 
   <section id="projects" class="card">
@@ -31,7 +32,8 @@ title: "Home"
 
   <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>Reach me via <a href="mailto:patiljeevanr@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/patiljeevanr/">LinkedIn</a></p>
+          {% capture contact_content %}{% include contact.md %}{% endcapture %}
+          {{ contact_content | markdownify }}
   </section>
 
 </div>
