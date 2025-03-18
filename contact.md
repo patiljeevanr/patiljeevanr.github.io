@@ -5,5 +5,5 @@ title: "Contact"
 
 # Contact Me
 
-📧 **Email:** [jeevan@example.com](mailto:patiljeevanr@gmail.com)  
-🔗 **LinkedIn:** [View Profile](#)  
+📧 **Email:** [patiljeevanr@gmail.com](mailto:patiljeevanr@gmail.com)  
+🔗 **LinkedIn:** [View Profile](https://www.linkedin.com/in/patiljeevanr/)  
