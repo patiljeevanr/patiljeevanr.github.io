@@ -1,9 +1,24 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-  {{ content }}
-</div>
+<article class="blog-post">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">Published on {{ page.date | date_to_string }} | Categories: {{ page.categories | join: ", " }}</p>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <hr>
+
+    <div class="post-navigation">
+        {% if page.previous.url %}
+            <a class="prev-post" href="{{ page.previous.url }}">&larr; Previous: {{ page.previous.title }}</a>
+        {% endif %}
+        
+        {% if page.next.url %}
+            <a class="next-post" href="{{ page.next.url }}">Next: {{ page.next.title }} &rarr;</a>
+        {% endif %}
+    </div>
+</article>

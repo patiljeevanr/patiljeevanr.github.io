@@ -1,34 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ page.title }}</title>
-    
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  
-  </head>
-
-
-  <body>
-    <nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/cv">CV</a></li>
-<li><a href="/blog">Blog</a></li>
-</ul>
-    </nav>
-<div class="container">
-
-  {{ content }}
-
-</div>
-  
-  <footer>
-   <ul>
-   <li><a href="mailto:patiljeevanr@gmail.com">email</a></li>
-   <li><a href="https://github.com/patiljeevanr">github.com/patiljeevanr</a></li>
-   </ul>
-  </footer>
-  </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+    <script defer src="{{ site.baseurl }}/assets/js/script.js"></script>
+</head>
+<body>
+    {% include header.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+</body>
 </html>
