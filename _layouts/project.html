@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="project-post">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">Published on {{ page.date | date_to_string }}</p>
+
+    <div class="project-content">
+        {{ content }}
+    </div>
+
+    <hr>
+
+    <div class="post-navigation">
+        {% assign category = page.categories[0] %}
+        {% assign projects_in_category = site.projects | where_exp: "project", "project.categories contains category" %}
+
+        {% for project in projects_in_category %}
+            {% if project.date > page.date %}
+                {% assign next_project = project %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% for project in projects_in_category reversed %}
+            {% if project.date < page.date %}
+                {% assign prev_project = project %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% if prev_project %}
+            <a class="prev-project" href="{{ prev_project.url }}">&larr; Previous: {{ prev_project.title }}</a>
+        {% endif %}
+        
+        {% if next_project %}
+            <a class="next-project" href="{{ next_project.url }}">Next: {{ next_project.title }} &rarr;</a>
+        {% endif %}
+    </div>
+</article>
