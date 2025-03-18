@@ -4,9 +4,9 @@ title: "About Me"
 ---
 
 # About Me
-I am a Software Engineer with experience in Java, Go, Couchbase, and distributed systems.
+I am a Software Engineer specializing in **Java, Go, Couchbase, and cloud-native solutions**.
 
-I specialize in:
+I focus on:
 - High-throughput applications
-- Distributed caching
-- Cloud-native solutions
+- Distributed caching & NoSQL (Couchbase)
+- Performance optimization & scalability
