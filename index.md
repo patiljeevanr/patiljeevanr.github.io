@@ -6,20 +6,18 @@ title: "Home"
 <div class="container">
 
   <section id="about" class="card">
-      <h2>About Me</h2>
+      <h2>About</h2>
       <p>Software Engineer passionate about Java, Go, Couchbase, and distributed systems.</p>
   </section>
 
   <section id="projects" class="card">
       <h2>Projects</h2>
-      <div class="project">
-          <h3>Project 1</h3>
-          <p>Developed a high-performance API using Java and Micronaut for processing large-scale transactions. <a href="#">View More</a></p>
-      </div>
-      <div class="project">
-          <h3>Project 2</h3>
-          <p>Implemented a distributed caching system with Couchbase for reducing API response time by 50%. <a href="#">View More</a></p>
-      </div>
+          <ul>
+              {% for project in site.projects limit:3 %}
+                  <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+              {% endfor %}
+          </ul>
+      <p><a href="/projects">View All Projects</a></p>
   </section>
 
   <section id="blog" class="card">
