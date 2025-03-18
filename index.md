@@ -4,7 +4,7 @@ title: "Home"
 ---
 
 <div class="container">
-    
+
   <section id="about" class="card">
       <h2>About Me</h2>
       <p>Software Engineer passionate about Java, Go, Couchbase, and distributed systems.</p>
@@ -24,14 +24,11 @@ title: "Home"
 
   <section id="blog" class="card">
       <h2>Blog</h2>
-      <article>
-          <h3>Understanding Virtual Threads in Java 21</h3>
-          <p>Learn how Java 21 introduces virtual threads to improve concurrency. <a href="#">Read More</a></p>
-      </article>
-      <article>
-          <h3>Optimizing API Calls in Distributed Systems</h3>
-          <p>Techniques to enhance API performance for large-scale applications. <a href="#">Read More</a></p>
-      </article>
+      <p>Explore my thoughts on technology and personal experiences.</p>
+      <ul>
+          <li><a href="blog/tech.md">Tech Blogs</a></li>
+          <li><a href="blog/personal.md">Personal Blogs</a></li>
+      </ul>
   </section>
 
   <section id="contact" class="card">
