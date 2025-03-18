@@ -1,3 +1,10 @@
-name: Jeevan Patil, Student
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+title: "Jeevan Patil"
+author: "Jeevan Patil"
+description: "Portfolio and Blog"
+baseurl: "" # Keep empty for GitHub Pages
+url: "https://patiljeevanr.github.io"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
