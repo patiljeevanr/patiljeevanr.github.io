@@ -3,7 +3,7 @@ layout: default
 title: "About Me"
 ---
 
-# About Me
+# About
 I am a Software Engineer specializing in **Java, Go, Couchbase, and cloud-native solutions**.
 
 I focus on:
